@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio Evaluado</title>
+</head>
+<body style = " background:#3AB4ED">
+<!---->
+<center>
+<h1><strong>Empresa de transportes "El Bus"</strong></h1>
+<p><img src=assets/bus.png align="center"></p>
+
+<table width="300" border=3>
+	
+	<tr>
+		<td> 4</td>
+		<td >8</td>
+		<td >12</td>
+		<td >16</td>
+		<td >20</td>
+		<td >24</td>
+		<td >28</td>
+		<td >32</td> 
+	<tr>
+		<td>3</td>
+		<td>7</td>
+		<td>11</td>
+		<td>15</td>
+		<td>19</td>
+		<td>23</td>
+		<td>27</td>
+		<td>31</td> 
+	</tr>
+	<tr></tr>
+	<tr></tr>
+	<tr></tr>
+	<tr>
+		<td>2</td>
+		<td>6</td>
+		<td>10</td>
+		<td>14</td>
+		<td>18</td>
+		<td>22</td>
+		<td>26</td>
+		<td>30</td> 
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>5</td>
+		<td> 9 </td>
+		<td>13</td>
+		<td>17</td>
+		<td>21</td>
+		<td>25</td>
+		<td>29</td> 
+	</tr>
+
+</table>
+
+<form>
+<div id="contenedor1">
+	<br>
+	<p>
+    <input type="text" id="buscarDni" placeholder="Escribe el DNI a buscar"  required>
+    <abbr title="Buscará el DNI para saber si ya ha reservado su asiento"><button  type="button" onclick="buscar()" >Buscar DNI</button></abbr>
+    </p>
+    
+    <h2><b>N° de asiento seleccionado:</b><div  id="mostrar"></div></h2>
+
+    <p><b>Nombres:</b><br>
+    <input type="text" id="nombre" placeholder="Escribir el Nombre" required="	"></label></p>
+
+    <p><b>Apellidos:</b><br>
+    <input type="text" id="apellido" placeholder="Escribir Apellidos" required=""></p>
+
+    <p><b>DNI:</b><br>
+    <input type="number" id="dni" placeholder="Escribir DNI" required=""></p>
+
+    <abbr title = "Borrará los datos del formulario que estas llenando actualmente"><input type = "reset" ></abbr>
+
+    <abbr title = "Reservará el asiento con los datos que estas llenando">
+    <button id="btnReservar" type="button" onclick="reservar()" return = false >Reservar Asiento</button></abbr>
+
+    <abbr title="Cancelará el asiento que ya ha había sido reservado"><button id="btnCancelar" type="reset" onclick="cancelar()">Cancelar Asiento</button></abbr>
+    
+    
+</div><br>
+</form>
+<br>
+
+<abbr title="Mostrará la lista con los datos de todos los asientos reservados"><button id="listar" type="button" onclick="listar()">Listar</button></abbr><br>
+<div id = "enlistando"></div><br>
+
+<script src="assets/js/Asiento.js"></script>
+
+</center>	
+</body>
+</html>
